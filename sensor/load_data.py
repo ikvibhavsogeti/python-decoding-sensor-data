@@ -9,5 +9,5 @@ def load_sensor_data():
             data_reader = csv.DictReader(data_file, delimiter=',')
             for row in data_reader:
                 sensor_data.append(row)
-    
+        
     return sensor_data
