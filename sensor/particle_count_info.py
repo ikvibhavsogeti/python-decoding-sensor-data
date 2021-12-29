@@ -18,10 +18,7 @@ class ParticleData(HouseInfo):
         return self._convert_data(recs)
     
     def get_data_concentrations(self, data):
-        particulate = {}
-        particulate["good"] = 0
-        particulate["moderate"] = 0
-        particulate["bad"] = 0
+        particulate = {"good": 0, "moderate": 0, "bad": 0}
 
         for rec in data:
             if rec <= 50.0:
